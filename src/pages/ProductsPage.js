@@ -24,6 +24,7 @@ import {
   Link,
 } from '@mui/material';
 // components
+import AlignListItem from '../components/list/align-list-ltem';
 import Label from '../components/label';
 import Iconify from '../components/iconify';
 import Scrollbar from '../components/scrollbar';
@@ -31,7 +32,6 @@ import Scrollbar from '../components/scrollbar';
 import { UserListHead, UserListToolbar } from '../sections/@dashboard/user';
 // mock
 import DATALIST from '../_mock/products';
-import AlignListItem from 'src/components/list/align-list-ltem';
 
 // ----------------------------------------------------------------------
 
@@ -159,7 +159,7 @@ export default function ProductsPage() {
           <Typography variant="h4" gutterBottom>
             Products
           </Typography>
-          <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" />}>
+          <Button href='/dashboard/product/add' variant="contained" startIcon={<Iconify icon="eva:plus-fill" />}>
             New Products
           </Button>
         </Stack>
@@ -181,7 +181,7 @@ export default function ProductsPage() {
                 />
                 <TableBody>
                   {filteredUsers.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => {
-                    const { id, name, role, cDate, price, status, company, avatarUrl, isVerified } = row;
+                    const { id, name, role, cDate, stock, createAt, currency, price, status, product } = row;
                     const selectedUser = selected.indexOf(name) !== -1;
 
                     return (
@@ -192,18 +192,18 @@ export default function ProductsPage() {
 
                         <TableCell component="th" scope="row" padding="none">
                           <Stack direction="row" alignItems="center" spacing={2}>
-                            <AlignListItem />
+                            <AlignListItem item={product} />
                           </Stack>
                         </TableCell>
 
-                        <TableCell align="left">{cDate}</TableCell>
+                        <TableCell align="left"><AlignListItem item={createAt} /></TableCell>
 
-                        <TableCell align="left">{role} date,</TableCell>
+                        <TableCell align="left">{stock}</TableCell>
 
-                        <TableCell align="left">{price}</TableCell>
+                        <TableCell align="left">{currency} {price}</TableCell>
 
                         <TableCell align="left">
-                          <Label color={(status === 'banned' && 'error') || 'success'}>{sentenceCase(status)}</Label>
+                          <Label color={(status === 'Draft' && 'error') || 'success'}>{sentenceCase(status)}</Label>
                         </TableCell>
 
                         <TableCell align="right">

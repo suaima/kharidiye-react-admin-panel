@@ -7,27 +7,17 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 
-export default function AlignListItem() {
+export default function AlignListItem(props) {
     return (
         <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-            </ListItemAvatar>
+            {props.item.cover &&
+                <ListItemAvatar>
+                    <Avatar alt="Remy Sharp" src={props.item.cover} />
+                </ListItemAvatar>
+            }
             <ListItemText
-                primary="Brunch this weekend?"
-                secondary={
-                    <React.Fragment>
-                        <Typography
-                            sx={{ display: 'inline' }}
-                            component="span"
-                            variant="body2"
-                            color="text.primary"
-                        >
-                            Ali Connors
-                        </Typography>
-                        {" — I'll be in your neighborhood doing errands this…"}
-                    </React.Fragment>
-                }
+                primary={props.item.title && props.item.title}
+                secondary={props.item.subtitle && props.item.subtitle}
             />
         </ListItem>
     );
