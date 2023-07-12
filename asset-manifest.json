@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kharidiye-react-admin-panel/static/css/main.f8863dd4.chunk.css",
+    "main.js": "/kharidiye-react-admin-panel/static/js/main.2def4e61.chunk.js",
+    "main.js.map": "/kharidiye-react-admin-panel/static/js/main.2def4e61.chunk.js.map",
+    "runtime-main.js": "/kharidiye-react-admin-panel/static/js/runtime-main.23d51c9b.js",
+    "runtime-main.js.map": "/kharidiye-react-admin-panel/static/js/runtime-main.23d51c9b.js.map",
+    "static/js/2.1e92ed8f.chunk.js": "/kharidiye-react-admin-panel/static/js/2.1e92ed8f.chunk.js",
+    "static/js/2.1e92ed8f.chunk.js.map": "/kharidiye-react-admin-panel/static/js/2.1e92ed8f.chunk.js.map",
+    "index.html": "/kharidiye-react-admin-panel/index.html",
+    "precache-manifest.e86484a2fa6de45cc8f62a6490adc163.js": "/kharidiye-react-admin-panel/precache-manifest.e86484a2fa6de45cc8f62a6490adc163.js",
+    "service-worker.js": "/kharidiye-react-admin-panel/service-worker.js",
+    "static/css/main.f8863dd4.chunk.css.map": "/kharidiye-react-admin-panel/static/css/main.f8863dd4.chunk.css.map",
+    "static/js/2.1e92ed8f.chunk.js.LICENSE.txt": "/kharidiye-react-admin-panel/static/js/2.1e92ed8f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23d51c9b.js",
+    "static/js/2.1e92ed8f.chunk.js",
+    "static/css/main.f8863dd4.chunk.css",
+    "static/js/main.2def4e61.chunk.js"
+  ]
+}
