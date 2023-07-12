@@ -1,7 +1,7 @@
 {
   "name": "react-multi-page-website",
   "version": "0.1.0",
-  "homepage": "https://sumitt806.github.io/kharidiye-react-admin-panel",
+  "homepage": "https://suaima.github.io/kharidiye-react-admin-panel/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
