@@ -11,7 +11,7 @@ const ProductList = () => {
                             <h1>Product</h1>
                             <p className="breadcrumbs">
                                 <span>
-                                    <a href="index.html">Home</a>
+                                    <a href="/">Home</a>
                                 </span>
                                 <span>
                                     <i className="mdi mdi-chevron-right" />
@@ -20,7 +20,7 @@ const ProductList = () => {
                             </p>
                         </div>
                         <div>
-                            <a href="product-list.html" className="btn btn-primary">
+                            <a href="product-list" className="btn btn-primary">
                                 {" "}
                                 Add Porduct
                             </a>

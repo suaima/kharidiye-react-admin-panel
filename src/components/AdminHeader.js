@@ -63,11 +63,11 @@ const AdminHeader = () => {
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="user-profile.html">
+                                        <a href="user-profile">
                                             <i className="mdi mdi-account" /> My Profile
                                         </a>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <a href="#">
                                             <i className="mdi mdi-email" /> Message
                                         </a>
@@ -83,7 +83,7 @@ const AdminHeader = () => {
                                             {' '}
                                             <i className="mdi mdi-settings-outline" /> Setting{' '}
                                         </a>
-                                    </li>
+                                    </li> */}
                                     <li className="dropdown-footer">
                                         <a href="/">
                                             {' '}
@@ -725,9 +725,9 @@ const AdminHeader = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="right-sidebar-in right-sidebar-2-menu">
+                            {/* <li className="right-sidebar-in right-sidebar-2-menu">
                                 <i className="mdi mdi-settings-outline mdi-spin" />
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </nav>

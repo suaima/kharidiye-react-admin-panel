@@ -64,7 +64,7 @@ function Navigation() {
                     </div>
                   </li>
                   <li>
-                    <a href="user-profile.html">
+                    <a href="user-profile">
                       <i className="mdi mdi-account" /> My Profile
                     </a>
                   </li>

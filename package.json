@@ -1,6 +1,7 @@
 {
   "name": "react-multi-page-website",
   "version": "0.1.0",
+  "homepage": "https://sumitt806.github.io/kharidiye-react-admin-panel",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -18,7 +19,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts --openssl-legacy-provider test",
-    "eject": "react-scripts --openssl-legacy-provider eject"
+    "eject": "react-scripts --openssl-legacy-provider eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

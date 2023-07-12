@@ -658,7 +658,7 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u1.jpg"
@@ -667,7 +667,7 @@ function Home() {
                                                             </a>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Selena Wagner
                                                                 </h6>
@@ -683,7 +683,7 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u2.jpg"
@@ -692,7 +692,7 @@ function Home() {
                                                             </a>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Walter Reuter
                                                                 </h6>
@@ -708,7 +708,7 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u3.jpg"
@@ -717,7 +717,7 @@ function Home() {
                                                             </a>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Larissa Gebhardt
                                                                 </h6>
@@ -733,7 +733,7 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u4.jpg"
@@ -742,7 +742,7 @@ function Home() {
                                                             </a>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Albrecht Straub
                                                                 </h6>
@@ -758,7 +758,7 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u5.jpg"
@@ -767,7 +767,7 @@ function Home() {
                                                             </a>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Leopold Ebert
                                                                 </h6>
@@ -783,7 +783,7 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u3.jpg"
@@ -792,7 +792,7 @@ function Home() {
                                                             </a>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile.html">
+                                                            <a href="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Larissa Gebhardt
                                                                 </h6>

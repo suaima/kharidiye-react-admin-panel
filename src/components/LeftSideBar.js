@@ -42,11 +42,11 @@ function LeftSideBar() {
                                                 <span className="nav-text">User List</span>
                                             </a>
                                         </li>
-                                        <li className="">
+                                        {/* <li className="">
                                             <a className="sidenav-item-link" href="user-profile">
                                                 <span className="nav-text">Users Profile</span>
                                             </a>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                                 <hr />
