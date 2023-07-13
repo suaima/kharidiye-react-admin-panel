@@ -8,7 +8,7 @@ function ProductAdd() {
                 <div className="content">
                     <div className="breadcrumb-wrapper d-flex align-items-center justify-content-between">
                         <div>
-                            <h1>Add Product</h1>
+                            <h1>Add Product wssd</h1>
                             <p className="breadcrumbs">
                                 <span>
                                     <a href="/">Home</a>
@@ -30,7 +30,7 @@ function ProductAdd() {
                         <div className="col-12">
                             <div className="card card-default">
                                 <div className="card-header card-header-border-bottom">
-                                    <h2>Add Product</h2>
+                                    <h2>Add Product sds</h2>
                                 </div>
                                 <div className="card-body">
                                     <div className="row ec-vendor-uploads">

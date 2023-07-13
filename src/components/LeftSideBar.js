@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import MenuItem from './MenuItem'
 
 function LeftSideBar() {
     return (
@@ -29,28 +30,7 @@ function LeftSideBar() {
                                 </a>
                                 <hr />
                             </li>
-                            {/* Users */}
-                            <li className="has-sub">
-                                <a className="sidenav-item-link" href="javascript:void(0)">
-                                    <i className="mdi mdi-account-group" />
-                                    <span className="nav-text">Users</span> <b className="caret" />
-                                </a>
-                                <div className="collapse">
-                                    <ul className="sub-menu" id="users" data-parent="#sidebar-menu">
-                                        <li className="">
-                                            <a className="sidenav-item-link" href="/user-list">
-                                                <span className="nav-text">User List</span>
-                                            </a>
-                                        </li>
-                                        {/* <li className="">
-                                            <a className="sidenav-item-link" href="user-profile">
-                                                <span className="nav-text">Users Profile</span>
-                                            </a>
-                                        </li> */}
-                                    </ul>
-                                </div>
-                                <hr />
-                            </li>
+                            <MenuItem icon='mdi-account-group' />
                             {/* Category */}
                             <li className="has-sub">
                                 <a className="sidenav-item-link" href="javascript:void(0)">
