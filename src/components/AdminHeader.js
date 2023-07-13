@@ -1,13 +1,19 @@
 import React from 'react'
 
 const AdminHeader = () => {
+    
+    const sidebartogglerHandler = () => {
+        document.body.classList.toggle('sidebar-minified-out')
+        document.body.classList.toggle('sidebar-minified')
+    }
+
     return (
         <>
             {/* Header */}
             <header className="ec-main-header" id="header">
                 <nav className="navbar navbar-static-top navbar-expand-lg">
                     {/* Sidebar toggle button */}
-                    <button id="sidebar-toggler" className="sidebar-toggle" />
+                    <button id="sidebar-toggler" className="sidebar-toggle" onClick={sidebartogglerHandler} />
                     {/* search form */}
                     <div className="search-form d-lg-inline-block">
                         <div className="input-group">
