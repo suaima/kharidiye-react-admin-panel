@@ -1,26 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 
-import LeftSideBar from "./LeftSideBar";
-import UserList from "./UserList";
-import UserProfile from "./UserProfile";
-import MainCategory from "./MainCategory";
-import SubCategory from "./SubCategory";
-import ProductAdd from "./ProductAdd";
-import ProductList from "./ProductList";
-import ProductDetail from "./ProductDetail";
-import NewOrder from "./NewOrder";
-import OrderHistory from "./OrderHistory";
-import OrderDetail from "./OrderDetail";
-import Invoice from "./Invoice";
-import SignIn from "./SignIn";
-import Home from './Home';
-import Footer from './Footer';
-import AdminHeader from './AdminHeader';
+import LeftSideBar from "../components/LeftSideBar";
+import UserList from "../components/UserList";
+import UserProfile from "../components/UserProfile";
+import MainCategory from "../components/MainCategory";
+import SubCategory from "../components/SubCategory";
+import ProductAdd from "../components/ProductAdd";
+import ProductList from "../components/ProductList";
+import ProductDetail from "../components/ProductDetail";
+import NewOrder from "../components/NewOrder";
+import OrderHistory from "../components/OrderHistory";
+import OrderDetail from "../components/OrderDetail";
+import Invoice from "../components/Invoice";
+import SignIn from "../components/SignIn";
+import Home from '../components/Home';
+import Footer from '../components/Footer';
+import AdminHeader from '../components/AdminHeader';
+import Storage from './Storage';
 
 const Layout2 = () => {
+    let navigate = useNavigate();
+    const userDetail = Storage.getItem('userDetail')
+    console.log(userDetail);
+
+    useEffect(() => {
+        if (!userDetail.token) {
+            navigate("/sign-in", { replace: true });
+        }
+    });
+
     return (
         <div className="wrapper">
             <Router>
@@ -28,7 +38,7 @@ const Layout2 = () => {
                 <div className="ec-page-wrapper">
                     <AdminHeader />
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/dashboard" element={<Home />} />
                         <Route path="/user-list" element={<UserList />} />
                         <Route path="/user-profile" element={<UserProfile />} />
                         <Route path="/main-category" element={<MainCategory />} />

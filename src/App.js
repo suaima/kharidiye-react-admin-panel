@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import './App.css';
-import Layout1 from "./components/Layout1";
-import Layout2 from "./components/Layout2";
+import Layout1 from "./common/Layout1";
+import Layout2 from "./common/Layout2";
 
 function App() {
   const currentPath = window.location.pathname;
@@ -10,7 +9,7 @@ function App() {
   return (
     <>
       {
-        (currentPath == "/sign-in" || currentPath == "/sign-up") ?
+        (currentPath === "/sign-in" || currentPath === "/sign-up") ?
           (
             <Layout1 />
           ) : (

@@ -15,7 +15,7 @@ function MenuItem({ icon = "mdi-account-group", menuTitle = "Admin", subMenu = {
           <div className={'collapse ' + (menuExpand ? 'show' : '')}>
             <ul className="sub-menu" id="users" data-parent="#sidebar-menu">
               {subMenu.length > 0 && subMenu.map((item, i) => {
-                return <li className="">
+                return <li className="" key={i}>
                   <Link className="sidenav-item-link" to={item.link}>
                     <span className="nav-text">{item.name}</span>
                   </Link>

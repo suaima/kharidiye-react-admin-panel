@@ -3,7 +3,9 @@ import logo from '../logo.svg'
 
 const AppContext = createContext({
   sidebarMinified: "sidebar-minified-out",
-  defaultImage: logo
+  defaultImage: logo,
+  authenticated: false,
+  setAuthenticated: (auth) => { }
 });
 
-export { AppContext };
+export default AppContext;

@@ -1,6 +1,41 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { Navigate, useNavigate } from 'react-router';
+import Storage from '../common/Storage';
 
 const SignIn = () => {
+
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    let navigate = useNavigate();
+    const userDetail = Storage.getItem('userDetail')
+
+    useEffect(() => {
+        if (userDetail.token) {
+            navigate("/sign-in", { replace: true });
+        }
+    });
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+
+        console.log('Hello');
+        console.log(username);
+        console.log(password);
+
+        fetch('https://dummyjson.com/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username: username,
+                password: password,
+            })
+        })
+            .then(res => res.json())
+            .then((json) => {
+                Storage.setItem('userDetail', json);
+                navigate("/dashboard", { replace: true });
+            });
+    }
     return (
         <div className="sign-inup">
             <div className="container d-flex align-items-center justify-content-center form-height-login pt-24px pb-24px">
@@ -20,14 +55,15 @@ const SignIn = () => {
                             </div>
                             <div className="card-body p-5">
                                 <h4 className="text-dark mb-5">Sign In</h4>
-                                <form action="/">
+                                <form action="/" onSubmit={handleLogin}>
                                     <div className="row">
                                         <div className="form-group col-md-12 mb-4">
                                             <input
-                                                type="email"
+                                                type="text"
                                                 className="form-control"
                                                 id="email"
                                                 placeholder="Username"
+                                                onChange={e => setUsername(e.target.value)}
                                             />
                                         </div>
                                         <div className="form-group col-md-12 ">
@@ -36,6 +72,7 @@ const SignIn = () => {
                                                 className="form-control"
                                                 id="password"
                                                 placeholder="Password"
+                                                onChange={e => setPassword(e.target.value)}
                                             />
                                         </div>
                                         <div className="col-md-12">
