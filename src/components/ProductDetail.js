@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProductDetail = () => {
     return (
@@ -146,21 +147,21 @@ const ProductDetail = () => {
                                                         <ul>
                                                             <li>
                                                                 <b>Special Price :</b> Get extra 16% off (price
-                                                                inclusive of discount) <a href="#">T&amp;C</a>{" "}
+                                                                inclusive of discount) <Link to="/"> T&C </Link>
                                                             </li>
                                                             <li>
                                                                 <b>Bank Offer :</b> 10% off on XYZ Bank Cards, up to
-                                                                $12. On orders of $200 and above{" "}
-                                                                <a href="#">T&amp;C</a>
+                                                                $12. On orders of $200 and above
+                                                                <Link to="/"> T&C </Link>
                                                             </li>
                                                             <li>
                                                                 <b>Bank Offer :</b> 5% Unlimited Cashback on Admin
-                                                                XYZ Bank Credit Card <a href="#">T&amp;C</a>
+                                                                XYZ Bank Credit Card <Link to="/"> T&C </Link>
                                                             </li>
                                                             <li>
                                                                 <b>Bank Offer :</b> Flat $50 off on first Admin Pay
-                                                                Later order of $200 and above{" "}
-                                                                <a href="#">T&amp;C</a>
+                                                                Later order of $200 and above
+                                                                <Link to="/"> T&C </Link>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -218,7 +219,7 @@ const ProductDetail = () => {
                                             <div className="card card-default seller-card">
                                                 <div className="card-body text-center">
                                                     <a
-                                                        href="javascript:0"
+                                                        href="/"
                                                         className="text-secondary d-inline-block"
                                                     >
                                                         <div className="image mb-3">

@@ -1,24 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-function MenuItem({ icon = "mdi-account-group" }) {
+function MenuItem({ icon = "mdi-account-group", menuTitle = "Admin", subMenu = {} }) {
+  const [menuExpand, setMenuExpand] = useState(false);
   return (
     <>
       {/* Users */}
-      <li className="has-sub">
-        <Link className="sidenav-item-link" to="/">
+      <li className={'has-sub ' + (menuExpand ? 'expand' : '')}>
+        <Link className="sidenav-item-link" to="/" onClick={() => setMenuExpand(!menuExpand)}>
           <i className={"mdi " + icon} />
-          <span className="nav-text">Users</span> <b className="caret" />
+          <span className="nav-text">{menuTitle}</span> {subMenu.length > 0 && <b className="caret" />}
         </Link>
-        <div className="collapse">
-          <ul className="sub-menu" id="users" data-parent="#sidebar-menu">
-            <li className="">
-              <a className="sidenav-item-link" href="/user-list">
-                <span className="nav-text">User List</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        {subMenu.length > 0 &&
+          <div className={'collapse ' + (menuExpand ? 'show' : '')}>
+            <ul className="sub-menu" id="users" data-parent="#sidebar-menu">
+              {subMenu.length > 0 && subMenu.map((item, i) => {
+                return <li className="">
+                  <Link className="sidenav-item-link" to={item.link}>
+                    <span className="nav-text">{item.name}</span>
+                  </Link>
+                </li>
+              })}
+            </ul>
+          </div>
+        }
         <hr />
       </li>
     </>

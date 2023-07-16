@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
@@ -58,37 +59,37 @@ function Home() {
                                         role="tablist"
                                     >
                                         <li className="nav-item">
-                                            <a
+                                            <Link
                                                 className="nav-link active"
                                                 data-bs-toggle="tab"
-                                                href="#todays"
+                                                to="#todays"
                                                 role="tab"
                                                 aria-selected="true"
                                             >
                                                 Today's
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a
+                                            <Link
                                                 className="nav-link"
                                                 data-bs-toggle="tab"
-                                                href="#monthly"
+                                                to="#monthly"
                                                 role="tab"
                                                 aria-selected="false"
                                             >
                                                 Monthly{" "}
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a
+                                            <Link
                                                 className="nav-link"
                                                 data-bs-toggle="tab"
-                                                href="#yearly"
+                                                to="#yearly"
                                                 role="tab"
                                                 aria-selected="false"
                                             >
                                                 Yearly
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                     <div className="tab-content pt-4" id="salesReport">
@@ -115,10 +116,10 @@ function Home() {
                                 <div className="card-body">
                                     <canvas id="doChart" />
                                 </div>
-                                <a href="#" className="pb-5 d-block text-center text-muted">
+                                {/* <Link to="#" className="pb-5 d-block text-center text-muted">
                                     <i className="mdi mdi-download mr-2" />
                                     Download overall report
-                                </a>
+                                </Link> */}
                                 <div className="card-footer d-flex flex-wrap bg-white p-0">
                                     <div className="col-6">
                                         <div className="p-20">
@@ -137,13 +138,13 @@ function Home() {
                                                     />
                                                     Order Unpaid
                                                 </li>
-                                                <li>
+                                                {/* <li>
                                                     <i
                                                         className="mdi mdi-checkbox-blank-circle-outline mr-2"
                                                         style={{ color: "#ff7b7b" }}
                                                     />
                                                     Order returned
-                                                </li>
+                                                </li> */}
                                             </ul>
                                         </div>
                                     </div>
@@ -201,11 +202,11 @@ function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="card-footer d-flex flex-wrap bg-white border-top">
-                                            <a href="#" className="text-uppercase py-3">
+                                        {/* <div className="card-footer d-flex flex-wrap bg-white border-top">
+                                            <Link to="#" className="text-uppercase py-3">
                                                 In-Detail Overview
-                                            </a>
-                                        </div>
+                                            </Link>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -218,11 +219,11 @@ function Home() {
                                 <div className="card-body">
                                     <canvas id="currentUser" className="chartjs" />
                                 </div>
-                                <div className="card-footer d-flex flex-wrap bg-white border-top">
-                                    <a href="#" className="text-uppercase py-3">
+                                {/* <div className="card-footer d-flex flex-wrap bg-white border-top">
+                                    <Link to="#" className="text-uppercase py-3">
                                         In-Detail Overview
-                                    </a>
-                                </div>
+                                    </Link>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -257,9 +258,9 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="card-footer d-flex flex-wrap bg-white">
-                                    <a href="#" className="text-uppercase py-3">
+                                    <Link to="#" className="text-uppercase py-3">
                                         In-Detail Overview
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -273,9 +274,9 @@ function Home() {
                                             <i className="mdi mdi-cached" />
                                         </button>
                                         <div className="dropdown show d-inline-block widget-dropdown">
-                                            <a
+                                            <Link
                                                 className="dropdown-toggle icon-burger-mini"
-                                                href="#"
+                                                to="#"
                                                 role="button"
                                                 id="dropdown-units"
                                                 data-bs-toggle="dropdown"
@@ -285,13 +286,13 @@ function Home() {
                                             />
                                             <ul className="dropdown-menu dropdown-menu-right">
                                                 <li className="dropdown-item">
-                                                    <a href="#">Action</a>
+                                                    <Link to="#">Action</Link>
                                                 </li>
                                                 <li className="dropdown-item">
-                                                    <a href="#">Another action</a>
+                                                    <Link to="#">Another action</Link>
                                                 </li>
                                                 <li className="dropdown-item">
-                                                    <a href="#">Something else here</a>
+                                                    <Link to="#">Something else here</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -388,9 +389,9 @@ function Home() {
                                     </table>
                                 </div>
                                 <div className="card-footer d-flex flex-wrap bg-white">
-                                    <a href="#" className="text-uppercase py-3">
+                                    <Link to="#" className="text-uppercase py-3">
                                         View Report
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -428,10 +429,10 @@ function Home() {
                                             <tr>
                                                 <td>24541</td>
                                                 <td>
-                                                    <a className="text-dark" href="#">
+                                                    <Link className="text-dark" to="#">
                                                         {" "}
                                                         Coach Swagger
-                                                    </a>
+                                                    </Link>
                                                 </td>
                                                 <td className="d-none d-lg-table-cell">1 Unit</td>
                                                 <td className="d-none d-lg-table-cell">Oct 20, 2018</td>
@@ -441,9 +442,9 @@ function Home() {
                                                 </td>
                                                 <td className="text-right">
                                                     <div className="dropdown show d-inline-block widget-dropdown">
-                                                        <a
+                                                        <Link
                                                             className="dropdown-toggle icon-burger-mini"
-                                                            href="#"
+                                                            to="#"
                                                             role="button"
                                                             id="dropdown-recent-order1"
                                                             data-bs-toggle="dropdown"
@@ -453,10 +454,10 @@ function Home() {
                                                         />
                                                         <ul className="dropdown-menu dropdown-menu-right">
                                                             <li className="dropdown-item">
-                                                                <a href="#">View</a>
+                                                                <Link to="#">View</Link>
                                                             </li>
                                                             <li className="dropdown-item">
-                                                                <a href="#">Remove</a>
+                                                                <Link to="#">Remove</Link>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -465,10 +466,10 @@ function Home() {
                                             <tr>
                                                 <td>24541</td>
                                                 <td>
-                                                    <a className="text-dark" href="#">
+                                                    <Link className="text-dark" to="#">
                                                         {" "}
                                                         Toddler Shoes, Gucci Watch
-                                                    </a>
+                                                    </Link>
                                                 </td>
                                                 <td className="d-none d-lg-table-cell">2 Units</td>
                                                 <td className="d-none d-lg-table-cell">Nov 15, 2018</td>
@@ -478,9 +479,9 @@ function Home() {
                                                 </td>
                                                 <td className="text-right">
                                                     <div className="dropdown show d-inline-block widget-dropdown">
-                                                        <a
+                                                        <Link
                                                             className="dropdown-toggle icon-burger-mini"
-                                                            href="#"
+                                                            to="#"
                                                             role="button"
                                                             id="dropdown-recent-order2"
                                                             data-bs-toggle="dropdown"
@@ -490,10 +491,10 @@ function Home() {
                                                         />
                                                         <ul className="dropdown-menu dropdown-menu-right">
                                                             <li className="dropdown-item">
-                                                                <a href="#">View</a>
+                                                                <Link to="#">View</Link>
                                                             </li>
                                                             <li className="dropdown-item">
-                                                                <a href="#">Remove</a>
+                                                                <Link to="#">Remove</Link>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -502,10 +503,10 @@ function Home() {
                                             <tr>
                                                 <td>24541</td>
                                                 <td>
-                                                    <a className="text-dark" href="#">
+                                                    <Link className="text-dark" to="#">
                                                         {" "}
                                                         Hat Black Suits
-                                                    </a>
+                                                    </Link>
                                                 </td>
                                                 <td className="d-none d-lg-table-cell">1 Unit</td>
                                                 <td className="d-none d-lg-table-cell">Nov 18, 2018</td>
@@ -515,9 +516,9 @@ function Home() {
                                                 </td>
                                                 <td className="text-right">
                                                     <div className="dropdown show d-inline-block widget-dropdown">
-                                                        <a
+                                                        <Link
                                                             className="dropdown-toggle icon-burger-mini"
-                                                            href="#"
+                                                            to="#"
                                                             role="button"
                                                             id="dropdown-recent-order3"
                                                             data-bs-toggle="dropdown"
@@ -527,10 +528,10 @@ function Home() {
                                                         />
                                                         <ul className="dropdown-menu dropdown-menu-right">
                                                             <li className="dropdown-item">
-                                                                <a href="#">View</a>
+                                                                <Link to="#">View</Link>
                                                             </li>
                                                             <li className="dropdown-item">
-                                                                <a href="#">Remove</a>
+                                                                <Link to="#">Remove</Link>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -539,10 +540,10 @@ function Home() {
                                             <tr>
                                                 <td>24541</td>
                                                 <td>
-                                                    <a className="text-dark" href="#">
+                                                    <Link className="text-dark" to="#">
                                                         {" "}
                                                         Backpack Gents, Swimming Cap Slin
-                                                    </a>
+                                                    </Link>
                                                 </td>
                                                 <td className="d-none d-lg-table-cell">5 Units</td>
                                                 <td className="d-none d-lg-table-cell">Dec 13, 2018</td>
@@ -552,9 +553,9 @@ function Home() {
                                                 </td>
                                                 <td className="text-right">
                                                     <div className="dropdown show d-inline-block widget-dropdown">
-                                                        <a
+                                                        <Link
                                                             className="dropdown-toggle icon-burger-mini"
-                                                            href="#"
+                                                            to="#"
                                                             role="button"
                                                             id="dropdown-recent-order4"
                                                             data-bs-toggle="dropdown"
@@ -564,10 +565,10 @@ function Home() {
                                                         />
                                                         <ul className="dropdown-menu dropdown-menu-right">
                                                             <li className="dropdown-item">
-                                                                <a href="#">View</a>
+                                                                <Link to="#">View</Link>
                                                             </li>
                                                             <li className="dropdown-item">
-                                                                <a href="#">Remove</a>
+                                                                <Link to="#">Remove</Link>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -576,10 +577,10 @@ function Home() {
                                             <tr>
                                                 <td>24541</td>
                                                 <td>
-                                                    <a className="text-dark" href="#">
+                                                    <Link className="text-dark" to="#">
                                                         {" "}
                                                         Speed 500 Ignite
-                                                    </a>
+                                                    </Link>
                                                 </td>
                                                 <td className="d-none d-lg-table-cell">1 Unit</td>
                                                 <td className="d-none d-lg-table-cell">Dec 23, 2018</td>
@@ -589,9 +590,9 @@ function Home() {
                                                 </td>
                                                 <td className="text-right">
                                                     <div className="dropdown show d-inline-block widget-dropdown">
-                                                        <a
+                                                        <Link
                                                             className="dropdown-toggle icon-burger-mini"
-                                                            href="#"
+                                                            to="#"
                                                             role="button"
                                                             id="dropdown-recent-order5"
                                                             data-bs-toggle="dropdown"
@@ -601,10 +602,10 @@ function Home() {
                                                         />
                                                         <ul className="dropdown-menu dropdown-menu-right">
                                                             <li className="dropdown-item">
-                                                                <a href="#">View</a>
+                                                                <Link to="#">View</Link>
                                                             </li>
                                                             <li className="dropdown-item">
-                                                                <a href="#">Remove</a>
+                                                                <Link to="#">Remove</Link>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -627,25 +628,25 @@ function Home() {
                                             <i className="mdi mdi-cached" />
                                         </button>
                                         <div className="dropdown show d-inline-block widget-dropdown">
-                                            <a
+                                            <Link
                                                 className="dropdown-toggle icon-burger-mini"
-                                                href="#"
+                                                to="#"
                                                 role="button"
                                                 id="dropdown-customar"
                                                 data-bs-toggle="dropdown"
                                                 aria-haspopup="true"
                                                 aria-expanded="false"
                                                 data-display="static"
-                                            ></a>
+                                            ></Link>
                                             <ul className="dropdown-menu dropdown-menu-right">
                                                 <li className="dropdown-item">
-                                                    <a href="#">Action</a>
+                                                    <Link to="#">Action</Link>
                                                 </li>
                                                 <li className="dropdown-item">
-                                                    <a href="#">Another action</a>
+                                                    <Link to="#">Another action</Link>
                                                 </li>
                                                 <li className="dropdown-item">
-                                                    <a href="#">Something else here</a>
+                                                    <Link to="#">Something else here</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -658,20 +659,20 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u1.jpg"
                                                                     alt="customer image"
                                                                 />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Selena Wagner
                                                                 </h6>
-                                                            </a>
+                                                            </Link>
                                                             <small>@selena.oi</small>
                                                         </div>
                                                     </div>
@@ -683,20 +684,20 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u2.jpg"
                                                                     alt="customer image"
                                                                 />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Walter Reuter
                                                                 </h6>
-                                                            </a>
+                                                            </Link>
                                                             <small>@walter.me</small>
                                                         </div>
                                                     </div>
@@ -708,20 +709,20 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u3.jpg"
                                                                     alt="customer image"
                                                                 />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Larissa Gebhardt
                                                                 </h6>
-                                                            </a>
+                                                            </Link>
                                                             <small>@larissa.gb</small>
                                                         </div>
                                                     </div>
@@ -733,20 +734,20 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u4.jpg"
                                                                     alt="customer image"
                                                                 />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Albrecht Straub
                                                                 </h6>
-                                                            </a>
+                                                            </Link>
                                                             <small>@albrech.as</small>
                                                         </div>
                                                     </div>
@@ -758,20 +759,20 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u5.jpg"
                                                                     alt="customer image"
                                                                 />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Leopold Ebert
                                                                 </h6>
-                                                            </a>
+                                                            </Link>
                                                             <small>@leopold.et</small>
                                                         </div>
                                                     </div>
@@ -783,20 +784,20 @@ function Home() {
                                                 <td>
                                                     <div className="media">
                                                         <div className="media-image mr-3 rounded-circle">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <img
                                                                     className="profile-img rounded-circle w-45"
                                                                     src="assets/img/user/u3.jpg"
                                                                     alt="customer image"
                                                                 />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="media-body align-self-center">
-                                                            <a href="profile">
+                                                            <Link to="profile">
                                                                 <h6 className="mt-0 text-dark font-weight-medium">
                                                                     Larissa Gebhardt
                                                                 </h6>
-                                                            </a>
+                                                            </Link>
                                                             <small>@larissa.gb</small>
                                                         </div>
                                                     </div>
@@ -819,28 +820,28 @@ function Home() {
                                             <i className="mdi mdi-cached" />
                                         </button>
                                         <div className="dropdown show d-inline-block widget-dropdown">
-                                            <a
+                                            <Link
                                                 className="dropdown-toggle icon-burger-mini"
-                                                href="#"
+                                                to="#"
                                                 role="button"
                                                 id="dropdown-product"
                                                 data-bs-toggle="dropdown"
                                                 aria-haspopup="true"
                                                 aria-expanded="false"
                                                 data-display="static"
-                                            ></a>
+                                            ></Link>
                                             <ul className="dropdown-menu dropdown-menu-right">
                                                 <li className="dropdown-item">
-                                                    <a href="#">Update Data</a>
+                                                    <Link to="#">Update Data</Link>
                                                 </li>
                                                 <li className="dropdown-item">
-                                                    <a href="#">Detailed Log</a>
+                                                    <Link to="#">Detailed Log</Link>
                                                 </li>
                                                 <li className="dropdown-item">
-                                                    <a href="#">Statistics</a>
+                                                    <Link to="#">Statistics</Link>
                                                 </li>
                                                 <li className="dropdown-item">
-                                                    <a href="#">Clear Data</a>
+                                                    <Link to="#">Clear Data</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -849,19 +850,19 @@ function Home() {
                                 <div className="card-body mt-10px mb-10px py-0">
                                     <div className="row media d-flex pt-15px pb-15px">
                                         <div className="col-lg-3 col-md-3 col-2 media-image align-self-center rounded">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                     src="assets/img/products/p1.jpg"
                                                     alt="customer image"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="col-lg-9 col-md-9 col-10 media-body align-self-center ec-pos">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <h6 className="mb-10px text-dark font-weight-medium">
                                                     Baby cotton shoes
                                                 </h6>
-                                            </a>
+                                            </Link>
                                             <p className="float-md-right sale">
                                                 <span className="mr-2">58</span>Sales
                                             </p>
@@ -877,19 +878,19 @@ function Home() {
                                     </div>
                                     <div className="row media d-flex pt-15px pb-15px">
                                         <div className="col-lg-3 col-md-3 col-2 media-image align-self-center rounded">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                     src="assets/img/products/p2.jpg"
                                                     alt="customer image"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="col-lg-9 col-md-9 col-10 media-body align-self-center ec-pos">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <h6 className="mb-10px text-dark font-weight-medium">
                                                     Hoodies for men
                                                 </h6>
-                                            </a>
+                                            </Link>
                                             <p className="float-md-right sale">
                                                 <span className="mr-2">20</span>Sales
                                             </p>
@@ -905,19 +906,19 @@ function Home() {
                                     </div>
                                     <div className="row media d-flex pt-15px pb-15px">
                                         <div className="col-lg-3 col-md-3 col-2 media-image align-self-center rounded">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <img
                                                     src="assets/img/products/p3.jpg"
                                                     alt="customer image"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="col-lg-9 col-md-9 col-10 media-body align-self-center ec-pos">
-                                            <a href="#">
+                                            <Link to="#">
                                                 <h6 className="mb-10px text-dark font-weight-medium">
                                                     Long slive t-shirt
                                                 </h6>
-                                            </a>
+                                            </Link>
                                             <p className="float-md-right sale">
                                                 <span className="mr-2">10</span>Sales
                                             </p>

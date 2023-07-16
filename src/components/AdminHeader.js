@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AdminHeader = () => {
-    
+
     const sidebartogglerHandler = () => {
         document.body.classList.toggle('sidebar-minified-out')
         document.body.classList.toggle('sidebar-minified')
@@ -23,7 +23,6 @@ const AdminHeader = () => {
                                 id="search-input"
                                 className="form-control"
                                 placeholder="search.."
-                                autofocus=""
                                 autoComplete="off"
                             />
                             <button
@@ -73,23 +72,7 @@ const AdminHeader = () => {
                                             <i className="mdi mdi-account" /> My Profile
                                         </a>
                                     </li>
-                                    {/* <li>
-                                        <a href="#">
-                                            <i className="mdi mdi-email" /> Message
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            {' '}
-                                            <i className="mdi mdi-diamond-stone" /> Projects{' '}
-                                        </a>
-                                    </li>
-                                    <li className="right-sidebar-in">
-                                        <a href="javascript:0">
-                                            {' '}
-                                            <i className="mdi mdi-settings-outline" /> Setting{' '}
-                                        </a>
-                                    </li> */}
+
                                     <li className="dropdown-footer">
                                         <a href="/">
                                             {' '}
